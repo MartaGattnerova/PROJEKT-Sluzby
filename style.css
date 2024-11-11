@@ -1,0 +1,34 @@
+html { box-sizing: border-box; } 
+*, ::before ::after { box-sizing: inherit; }
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* BARVY
+POZADÍ #FAFAFA
+šedá #8B8B8B
+stín #407BFF1F
+primární modrá #407BFF 
+*/
+
+/* MOBIL */
+@media screen and (max-width: 640px) {
+    
+}
+
+/* TABLET */
+@media screen and (min-width: 60px) {
+
+}
+
+/* PC */
+@media screen and (min-widht: 1100px) {
+    
+}
