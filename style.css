@@ -17,10 +17,97 @@ POZADÍ #FAFAFA
 stín #407BFF1F
 primární modrá #407BFF 
 */
+body {
+    margin: 0;
+    background-color: #FAFAFA;
+    font-family: "Montserrat", sans-serif;
+    color:#8B8B8B;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color:black;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    width: 60px;
+    background-color: #407BFF;
+}
+
+.odstavec1 {
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+}
+.tlacitko1, .tlacitko2 {
+    color:white;
+    font-size: 14px;
+    display:block;
+    padding: 11px 30px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.tlacitko1 {
+    background-color: #407BFF;
+    width:195px;
+}
+
+.tlacitko2 {
+    background-color: #8B8B8B;
+    width:220px;
+    margin-bottom:60px;
+}
+
+.podnadpis1 {
+    margin: 0 0 15px 0;
+}
+
+.odstavec2 {
+    margin: 0 0 30px 0;
+}
+
+.sluzby-delegatu, .sluzby-kancelare {
+    font-size: 13px;
+}
+
 
 /* MOBIL */
 @media screen and (max-width: 640px) {
-    
+    body {
+        margin: 60px 20px;
+        text-align: center;}
+    .cestovatel {max-width: 100%;
+                display: block;
+                margin: 0 auto;}
+    .mapa, .kaktus, .letadlo, .palma, .destnik, .auto {
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: #407BFF1F 0 4px 6px;
+        margin-bottom:10px;
+        }
+    .sluzby-delegatu img, .sluzby-kancelare img {
+        padding:20px;
+    }
+    .sluzby-delegatu p, .sluzby-kancelare p {
+        padding-top:19px;
+    }
+    .podnadpis2 {
+        margin-top:60px;
+        margin-bottom:17px;
+    }
+
 }
 
 /* TABLET */
