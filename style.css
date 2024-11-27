@@ -25,116 +25,147 @@ body {
     font-size: 16px;
 }
 
-h1 {
+.intro__title {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 650;
     color:black;
 }
 
-hr {
+.intro__divider {
     border: none;
     height: 2px;
     width: 60px;
     background-color: #407BFF;
+    margin: 0 auto;
 }
 
-.odstavec1 {
+.intro__text {
     margin: 30px 0;
 }
 
-h2 {
-    font-size: 16px;
-    font-weight: 500;
-    color:black;
-}
-.tlacitko1, .tlacitko2 {
+.intro__button {
     color:white;
     font-size: 14px;
-    display:block;
-    padding: 11px 30px;
-    margin: 10px auto;
+    display: block;
+    padding: 11px 0;
+    margin: 0 auto;
     border-radius: 20px;
 }
 
-.tlacitko1 {
+.intro__button--first {
     background-color: #407BFF;
-    width:195px;
+    width: 195px;
+    margin-bottom: 10px;
 }
 
-.tlacitko2 {
+.intro__button--second {
     background-color: #8B8B8B;
-    width:220px;
-    margin-bottom:60px;
+    width: 220px;
+    margin-bottom: 60px;
 }
 
-.podnadpis1 {
-    margin: 0 0 15px 0;
+.travel-services__title,
+.delegate-services__title {
+    font-size: 16px;
+    font-weight: 600;
+    color:black;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
-.odstavec2 {
-    margin: 0 0 30px 0;
-}
-
-.sluzby-delegatu, .sluzby-kancelare {
+.travel-services__boxes,
+.delegate-services__boxes {
     font-size: 13px;
 }
-
 
 /* MOBIL */
 @media screen and (max-width: 640px) {
     body {
         margin: 60px 20px;
-        text-align: center;}
-    .cestovatel {max-width: 100%;
-                display: block;
-                margin: 0 auto;}
-    h1 {margin-top: 40px;
-        margin-bottom: 10px;}
-    .mapa, .kaktus, .letadlo, .palma, .destnik, .auto {
+        text-align: center;
+    }
+    .intro__image {
+        max-width: 100%;
+        width: 350px;
+        height: 290px;
+        display: block;
+        margin: 0 auto;
+    }
+    .intro__title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .travel-services__description,
+    .delegate-services__description {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .travel-services__box,
+    .delegate-services__box {
         display: flex;
         background-color: white;
         border-radius: 10px;
         box-shadow: #407BFF1F 0 4px 6px;
         margin-bottom:10px;
         }
-    .sluzby-delegatu img, .sluzby-kancelare img {
+    .travel-services__icon,
+    .delegate-services__icon {
         padding:20px;
     }
-    .sluzby-delegatu p, .sluzby-kancelare p {
+    .travel-services__text,
+    .delegate-services__text {
         padding-top:19px;
     }
-    .podnadpis2 {
+    .delegate-services__title {
         margin-top:60px;
-        margin-bottom:17px;
     }
-    .odstavec3 {
-        margin-bottom: 30px;
-    }
-
 }
 
 /* TABLET */
 @media screen and (min-width: 640px) {
-    body {text-align: center;
-        margin: 60px 20px;}
-    h1 {margin-top: 30px;
-        margin-bottom: 10px;}
-    .odstavec1 {margin: 30px 110px;}
-    .odstavec2, .odstavec3 {margin: 17px 110px 40px 110px;}
-    .tlacitka {display: flex;}
-    .tlacitko1 {height: 18px;}
-    .tlacitko2 {margin-bottom: 0;
-                height:18px;}
-    .podnadpis1, .podnadpis2 {margin-top:80px;
-                                margin-bottom:17px;}
-    .sluzby-delegatu, .sluzby-kancelare {display: flex;}
-    .mapa, .kaktus, .letadlo, .palma, .destnik, .auto {
+    body {
+        margin: 60px 20px;
+        text-align: center;
+    }
+    .intro__title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .intro__text {
+        margin: 30px 110px;
+    }
+    .travel-services__description,
+    .delegate-services__description {
+        margin: 17px 110px 40px 110px;
+    }
+    .intro__buttons {
+        display: flex;
+    }
+    .intro__button--first {
+        height: 18px;
+    }
+    .intro__button--second {
+        margin-bottom: 0;
+        height:18px;
+    }
+    .travel-services__title,
+    .delegate-services__title {
+        margin-top:80px;
+        margin-bottom:17px;
+    }
+    .travel-services__box,
+    .delegate-services__box {
+        display: flex;
         background-color: white;
         border-radius: 10px;
         box-shadow: #407BFF1F 0 4px 6px;
-        padding:40px 15px 20px 15px;}
-    .kaktus, .destnik {margin-left:20px; margin-right:20px;}
-}
+        padding:40px 15px 20px 15px;
+    }
+
+    /* .kaktus, .destnik {margin-left:20px; margin-right:20px;}*/
+} 
 
 /* PC */
 @media screen and (min-width: 1100px) {
