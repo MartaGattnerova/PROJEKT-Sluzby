@@ -136,9 +136,15 @@ h2 {
     .kaktus, .destnik {margin-left:20px; margin-right:20px;}
 }
 
-
-
 /* PC */
-@media screen and (min-widht: 1100px) {
-    
+@media screen and (min-width: 1100px) {
+    body {text-align:left;}
+    .uvodni-sekce {
+        display: flex;
+    }
+    .cestovatel {order:2;
+    flex: 1 0 50%;
+    max-width:50%}
+    .leva-cast-sekce {order:1;
+    flex: 1 0 50%;}
 }
